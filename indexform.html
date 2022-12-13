@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <a href="javascript: history.go(-1)"type="button" class="btn btn-sm btn-outline-secondary" >Volver</a>
+<h2>Form control</h2>
+<label for="exampleDataList" class="form-label">Dia Libre</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="busqueda...">
+<datalist id="datalistOptions">
+  <option value="lunes">
+  <option value="martes">
+  <option value="miercoles">
+  <option value="jueves ">
+  <option value="viernes">
+
+</datalist>
+<br>
+   
+
+
+<h2>Select</h2>
+    <select class="form-select" multiple aria-label="multiple select example">
+        <option selected>temperatura</option>
+        <option value="1">frio</option>
+        <option value="2">tibio</option>
+        <option value="3">caliente</option>
+      </select>  
+      
+<br>      
+<h2>Checks & Radios</h2>  
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">encendido</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">inicio automatico</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">luz</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">ahorro bateria</label>
+  </div>  
+  <br>   
+
+<h2>Range</h2>  
+<label for="customRange3" class="form-label">felicidad</label>
+<input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+<br>
+
+<h2>Input Group</h2>
+<div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupFile01">Upload</label>
+    <input type="file" class="form-control" id="inputGroupFile01">
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="file" class="form-control" id="inputGroupFile02">
+    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+  </div>
+  
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
+    <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+  </div>
+  
+  <div class="input-group">
+    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+  </div>
+  <br>
+
+  <h2>Floating Labels</h2>
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+      <option selected>acido</option>
+      <option value="1">dulce</option>
+      <option value="2">salado</option>
+      <option value="3">amargo</option>
+    </select>
+    <label for="floatingSelect">seleccion unica</label>
+  </div>
+  <br>
+
+  <h2>Validations</h2>
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Jose" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Daniel" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">State</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>    
